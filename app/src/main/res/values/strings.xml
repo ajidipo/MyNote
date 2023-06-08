@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NoteDipz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="save">Save</string>
+    <string name="update">update</string>
+    <string name="delete">delete</string>
+    <string name="id">Id</string>
+    <string name="idnya">ID :</string>
+    <string name="nomor">Nomor</string>
+    <string name="no">No.</string>
+</resources>

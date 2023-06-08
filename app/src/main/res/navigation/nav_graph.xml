@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listNote">
+    <fragment
+        android:id="@+id/addNote"
+        android:name="com.example.notedipz.addNote"
+        android:label="Back"
+        tools:layout="@layout/fragment_add_note" >
+        <action
+            android:id="@+id/action_addNote_to_listNote"
+            app:destination="@id/listNote" />
+    </fragment>
+    <fragment
+        android:id="@+id/listNote"
+        android:name="com.example.notedipz.listNote"
+        android:label="My Note"
+        tools:layout="@layout/fragment_list_note" >
+        <action
+            android:id="@+id/action_listNote_to_addNote"
+            app:destination="@id/addNote" />
+        <action
+            android:id="@+id/action_listNote_to_updateNote"
+            app:destination="@id/updateNote" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateNote"
+        android:name="com.example.notedipz.updateNote"
+        android:label="Back"
+        tools:layout="@layout/fragment_update_note" >
+        <action
+            android:id="@+id/action_updateNote_to_listNote"
+            app:destination="@id/listNote" />
+        <argument
+            android:name="currentNote"
+            app:argType="com.example.notedipz.data.Note" />
+    </fragment>
+</navigation>
